@@ -1,0 +1,24 @@
+<ng-container *ngFor="let elem of list">
+  <div class="inline">
+    <div>subject: </div>
+    <div>{{elem.subject}}</div>
+  </div>
+  <div class="inline">
+    <div>content:</div>
+    <div>{{elem.content}}</div>
+  </div>
+  <hr>
+</ng-container>
+<form [formGroup]="form" (submit)="send()">
+  <div>
+    <div>
+      <label>subject</label>
+      <input formControlName="subject"/>
+    </div>
+    <div>
+      <label>content</label>
+      <input formControlName="content"/>
+    </div>
+  </div>
+  <button type="submit">Send</button>
+</form>

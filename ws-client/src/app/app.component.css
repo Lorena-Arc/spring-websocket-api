@@ -1,0 +1,9 @@
+form {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+}
+
+.inline {
+  display: flex;
+}
